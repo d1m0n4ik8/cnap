@@ -1,0 +1,585 @@
+<!DOCTYPE HTML>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Центра надання адміністративних послуг</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="top">
+	<header class="header fixed-top ">
+		<div class="line">
+			<div class="pink"></div>
+			<div class="blue"></div>
+			<div class="grey"></div>
+			<div class="yellow"></div>
+			<div class="green"></div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark shadow p-0 menu">
+			<div class="container">
+				<a class="navbar-brand p-0" href="index.html">
+					<img src="img/cnap.png" alt="" height="65px">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+					aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse flex-nowrap justify-content-end" id="navbarContent">
+					<ul class="nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown" href="#" role="button"
+								aria-expanded="false" data-item="Послуги">Послуги</a>
+							<ul class="dropdown-menu mt-2">
+								<li><a class="dropdown-item" href="#">Послуги ЦНАП</a></li>
+								<li><a class="dropdown-item" href="#">Онлайн послуги</a></li>
+								<li><a class="dropdown-item" href="#">Питання та відповіді</a></li>
+								<li><a class="dropdown-item" href="#">Єдиний державний портал <wbr/> адміністративних
+										<wbr/>послуг</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-light" href="#">Новини</a>
+						</li>
+						<li class="nav-item dropdown pb-1">
+							<a class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown" href="#" role="button"
+								aria-expanded="false">Про центр</a>
+							<ul class="dropdown-menu mt-2">
+								<li><a class="dropdown-item" href="#">Про центр</a></li>
+								<li><a class="dropdown-item" href="#">Фотогалерея</a></li>
+								<li><a class="dropdown-item" href="#">Звіти</a></li>
+								<li><a class="dropdown-item" href="#">Нормативно-правові <wbr/> документи</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-light" href="#">Команда</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-light" href="#">Контакти</a>
+						</li>
+					</ul>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+						data-bs-target="#exampleModal">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+							class="bi bi-search search-btn" viewBox="0 0 15 15">
+							<path
+								d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+						</svg>
+						<p class="none m-0">Пошук</p>
+					</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Пошук по сайту</h5>
+					</div>
+					<div class="modal-body">
+						<form class="d-flex ms-3 mb-1">
+							<input class="form-control  input search border-danger" type="search" placeholder="Пошук по сайту"
+								aria-label="Search">
+							<button class="btn btn-outline-danger" type="submit" id="search"><svg
+									xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+									class="bi bi-search" viewBox="0 0 15 15">
+									<path
+										d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+								</svg>
+							</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+						<button type="button" class="btn btn-primary">Пошук</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Slider-->
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://www.instantoffices.com/-/media/images/top-cities/default/block4.jpg"
+						class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>First slide label</h5>
+						<p>Some representative placeholder content for the first slide.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://www.instantoffices.com/-/media/images/top-cities/default/block4.jpg"
+						class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Second slide label</h5>
+						<p>Some representative placeholder content for the second slide.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://www.instantoffices.com/-/media/images/top-cities/default/block4.jpg"
+						class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Third slide label</h5>
+						<p>Some representative placeholder content for the third slide.</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<div class="container shadow p-3">
+			<!--Buttons-->
+			<div class="row row-cols-1 row-cols-md-3 g-3 mb-4">
+				<div class="col text-center">
+					<button class="button-82-pushable w-100" role="button"><a href="#" class="w-100 text-decoration-none">
+							<span class="button-82-shadow"></span>
+							<span class="button-82-edge"></span>
+							<span class="button-82-front text">
+								Послуги ЦНАП
+							</span>
+						</a>
+					</button>
+				</div>
+				<div class="col text-center">
+					<button class="button-82-pushable w-100" role="button"><a href="#" class="w-100 text-decoration-none">
+							<span class="button-82-shadow"></span>
+							<span class="button-82-edge"></span>
+							<span class="button-82-front text">
+								Питання та відповіді
+							</span>
+						</a></button>
+				</div>
+				<div class="col text-center">
+					<button class="button-82-pushable w-100" role="button"><a href="#" class="w-100 text-decoration-none">
+							<span class="button-82-shadow"></span>
+							<span class="button-82-edge"></span>
+							<span class="button-82-front text">
+								Клеванська громада
+							</span>
+						</a></button>
+				</div>
+			</div>
+			<!--Sectors-->
+			<div class="title">
+				<div class="hr">
+					<div class="pink"></div>
+					<div class="blue"></div>
+					<div class="grey"></div>
+					<div class="yellow"></div>
+					<div class="green"></div>
+				</div>
+				<h2 class="text-center">Сектори</h2>
+			</div>
+			<div class="row justify-content-between sectors mb-4">
+				<div class="sector__inner col-md overflow-hidden mb-3">
+					<div class="cube">
+						<div class="side front pink d-flex flex-column justify-content-center align-items-center">
+							<div class="baumans">A</div>
+							Сектор 1
+						</div>
+						<div class="side bottom pink d-flex flex-column justify-content-center align-items-center">
+							Сектор 1</div>
+					</div>
+				</div>
+
+				<div class="sector__inner col-md overflow-hidden mb-3">
+					<div class="cube">
+						<div class="side front blue d-flex flex-column justify-content-center align-items-center">
+							<div class="baumans">B</div>Сектор 2
+						</div>
+						<div class="side bottom blue d-flex flex-column justify-content-center align-items-center">
+							Сектор 2</div>
+					</div>
+				</div>
+
+				<div class="sector__inner col-md overflow-hidden mb-3">
+					<div class="cube">
+						<div class="side front grey d-flex flex-column justify-content-center align-items-center">
+							<div class="baumans">C</div>Сектор 3
+						</div>
+						<div class="side bottom grey d-flex flex-column justify-content-center align-items-center">
+							Сектор 3</div>
+					</div>
+				</div>
+
+				<div class="sector__inner col-md overflow-hidden mb-3">
+					<div class="cube">
+						<div class="side front yellow d-flex flex-column justify-content-center align-items-center">
+							<div class="baumans">D</div>Сектор 4
+						</div>
+						<div class="side bottom yellow d-flex flex-column justify-content-center align-items-center">
+							Сектор 4</div>
+					</div>
+				</div>
+				<div class="sector__inner col-md overflow-hidden mb-3">
+					<div class="cube">
+						<div class="side front green d-flex flex-column justify-content-center align-items-center">
+							<div class="baumans">E</div>Сектор 5
+						</div>
+						<div class="side bottom green d-flex flex-column justify-content-center align-items-center">
+							Сектор 5</div>
+					</div>
+				</div>
+			</div>
+			<!--News-->
+			<div class="title">
+				<div class="hr">
+					<div class="pink"></div>
+					<div class="blue"></div>
+					<div class="grey"></div>
+					<div class="yellow"></div>
+					<div class="green"></div>
+				</div>
+				<h2 class="text-center">Новини</h2>
+			</div>
+			<div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+				<div class="col">
+					<div class="card shadow">
+						<img src="img/1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<a href="#" class="text-decoration-none">
+								<h5 class="card-title">Card title</h5>
+							</a>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card shadow">
+						<img src="img/1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<a href="#" class="text-decoration-none">
+								<h5 class="card-title">Card title</h5>
+							</a>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card shadow">
+						<img src="img/1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<a href="#" class="text-decoration-none">
+								<h5 class="card-title">Card title</h5>
+							</a>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+								additional content.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Partners-->
+			<div class="title">
+				<div class="hr">
+					<div class="pink"></div>
+					<div class="blue"></div>
+					<div class="grey"></div>
+					<div class="yellow"></div>
+					<div class="green"></div>
+				</div>
+				<h2 class="text-center">Партнери</h2>
+			</div>
+			<div class="partners">
+				<a href="http://rivnerada.gov.ua/portal/landing" target="_blank"
+					data-original-title="Рівненська міська рада"><img class="img-responsive"
+						src="img/partners/rivne-rada.jpg"></a>
+
+				<a href="http://www.president.gov.ua" target="_blank" data-original-title="Президент України"><img
+						class="img-responsive" src="img/partners/president.jpg"></a>
+
+				<a href="http://dabi.gov.ua" target="_blank"
+					data-original-title="Державна архітектурно-будівельна інспекція України"><img class="img-responsive"
+						src="img/partners/dabi.jpg"></a>
+
+				<a href="http://www.kmu.gov.ua" target="_blank" data-original-title="Урядовий портал"><img
+						class="img-responsive" src="img/partners/kabmin.jpg"></a>
+
+				<a href="http://land.gov.ua" target="_blank"
+					data-original-title="Державна служба України з питань геодезії, картографії та кадастру"><img
+						class="img-responsive" src="img/partners/kadastr.jpg"></a>
+				<a href="http://www.me.gov.ua" target="_blank"
+					data-original-title="Міністерство економічного розвитку і торгівлі України"><img class="img-responsive"
+						src="img/partners/minecon.jpg"></a>
+
+				<a href="https://minjust.gov.ua" target="_blank" data-original-title="Міністерство юстиції України"><img
+						class="img-responsive" src="img/partners/minjust.jpg"></a>
+
+				<a href="http://www.minregion.gov.ua" target="_blank"
+					data-original-title="Міністерство регіонального розвитку, будівництва ЖКГ України"><img
+						class="img-responsive" src="img/partners/zhkg.jpg"></a>
+
+				<a href="http://www.rada.gov.ua" target="_blank" data-original-title="Верховна рада України"><img
+						class="img-responsive" src="img/partners/rada.jpg"></a>
+
+				<a href="http://www.dkrp.gov.ua" target="_blank"
+					data-original-title="Державна регуляторна служба України"><img class="img-responsive"
+						src="img/partners/regpol.jpg"></a>
+
+				<a href="http://www.auc.org.ua" target="_blank" data-original-title="Асоціація міст України"><img
+						class="img-responsive" src="img/partners/assoc.jpg"></a>
+
+				<a href="http://oblrada.rv.ua" target="_blank" data-original-title="Рівненська обласна рада"><img
+						class="img-responsive" src="img/partners/rv-rada.jpg"></a>
+
+				<a href="http://www.rv.gov.ua" target="_blank"
+					data-original-title="Рівненська обласна державна адміністрація"><img class="img-responsive"
+						src="img/partners/roda.jpg"></a>
+
+				<a href="http://pravo.org.ua" target="_blank" data-original-title="Центр політико-правових реформ"><img
+						class="img-responsive" src="img/partners/cppr.jpg"></a>
+
+				<a href="http://geo.rv.ua/ua/home" target="_blank"
+					data-original-title="Геопортал відкритих даних Управління містобудування та архітектури виконавчого комітету Рівненської міської ради"><img
+						class="img-responsive" src="img/partners/rivne-rada.jpg"></a>
+			</div>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.4645368345027!2d26.027729813364864!3d50.74841954172121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f67bd72d2a249%3A0xccc4b48b45afcf1e!2z0JrQu9C10LLQsNC90YHQutC40Lkg0L_QvtGB0LXQu9C60L7QstGL0Lkg0YHQvtCy0LXRgg!5e0!3m2!1sru!2sus!4v1646928891142!5m2!1sru!2sus"
+				width="100%" class="shadow" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+			<!--contacts-->
+			<div class="row row-cols-1 row-cols-md-3 g-2 pt-2 mb-4">
+				<div class="col">
+					<a href="#" class="call d-flex p-2 text-decoration-none align-items-center shadow"
+						style="border: 1px solid #009846;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#009846" viewBox="0 0 16 16"
+							class="mx-3">
+							<path
+								d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+						</svg>
+						<div class="contact-text">
+							<h5>Зателефонуйте нам</h5>
+							<h5 style="color:#009846;">+38(097) 445-52-52</h5>
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="#" class="call d-flex p-2 text-decoration-none align-items-center shadow"
+						style="border: 1px solid #f0003d;">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="50" height="50" fill="#f0003d"
+							class="mx-3">
+							<path
+								d="M10 20c0.313 0 0.567-0.254 0.567-0.567s-0.254-0.567-0.567-0.567c-4.727 0-8.573-3.978-8.573-8.867s3.846-8.867 8.573-8.867 8.573 3.978 8.573 8.867c0 3.071-1.362 4.943-2.636 5.671-0.634 0.362-1.271 0.444-1.662 0.214-0.398-0.235-0.475-0.753-0.469-1.147 0-0.003 0-0.005 0-0.008v-9.917c0-0.313-0.254-0.567-0.567-0.567s-0.567 0.254-0.567 0.567v1.7c-0.061-0.083-0.124-0.165-0.189-0.244-0.851-1.032-1.992-1.601-3.213-1.601s-2.362 0.568-3.213 1.601c-0.825 1.001-1.279 2.324-1.279 3.727s0.454 2.727 1.279 3.727c0.851 1.032 1.992 1.601 3.213 1.601s2.362-0.569 3.213-1.601c0.065-0.079 0.128-0.161 0.189-0.244v1.247c-0.013 0.979 0.352 1.737 1.027 2.135 0.751 0.443 1.798 0.366 2.8-0.206 1.55-0.886 3.207-3.099 3.207-6.655 0-2.668-1.007-5.177-2.837-7.065-1.834-1.893-4.274-2.935-6.87-2.935s-5.036 1.042-6.87 2.935c-1.829 1.888-2.837 4.397-2.837 7.065s1.007 5.177 2.837 7.065c1.834 1.893 4.274 2.935 6.87 2.935zM9.27 14.19c-1.852 0-3.359-1.882-3.359-4.195s1.507-4.195 3.359-4.195c1.852 0 3.359 1.882 3.359 4.195s-1.507 4.195-3.359 4.195z">
+							</path>
+						</svg>
+						<div class="contact-text">
+							<h5>Напишіть нам</h4>
+								<h5 style="color:#f0003d;">+38(097) 445-52-52</h5>
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="#" class="call d-flex p-2 text-decoration-none align-items-center shadow"
+						style="border: 1px solid #2e59c2;">
+						<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#2e59c2"
+							class="mx-3">
+							<path
+								d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z">
+							</path>
+						</svg>
+						<div class="contact-text">
+							<h5>Спостерігайте за нами</h5>
+							<h5 style="color:#2e59c2;">+38(097) 445-52-52</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!--Послуги-->
+			<div class="title">
+				<div class="hr">
+					<div class="pink"></div>
+					<div class="blue"></div>
+					<div class="grey"></div>
+					<div class="yellow"></div>
+					<div class="green"></div>
+				</div>
+				<h2 class="text-center">Послуги</h2>
+			</div>
+			<div class="row row-cols-2 row-cols-md-3 g-4">
+				<div class="col mb-2">
+					<a class="service-link d-flex flex-column align-items-center text-decoration-none services-link"
+						href="pages/2.html#list-1">
+						<img src="img/services/pasport.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Паспортні послуги</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html#list-2"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link">
+						<img src="img/services/house.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Реєстрація місця проживання</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link" onclick="activateElement()"><img
+							src="img/services/apartment.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Нерухомість</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link"><img
+							src="img/services/building.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Будівництво</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link"><img
+							src="img/services/transport.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Транспорт</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link"><img
+							src="img/services/study.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Освіта</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link"><img
+							src="img/services/nature.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Земельні послуги</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link"><img
+							src="img/services/architecture.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Культурна спадщина</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link"><img
+							src="img/services/parents.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Батькам</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link"><img
+							src="img/services/documents.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Документи</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link"><img
+							src="img/services/case.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Бізнес</h4>
+					</a>
+				</div>
+				<div class="col mb-2">
+					<a href="pages/2.html"
+						class="service-link d-flex flex-column align-items-center text-decoration-none services-link"><img
+							src="img/services/other.png" class="services-img" alt="...">
+						<h4 class="text-center pt-3">Інші послуги</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 d-flex p-3">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#009846"
+						class="bi bi-pin-angle-fill" viewBox="0 0 16 16">
+						<path
+							d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z" />
+					</svg>
+					<h5 class="footer-text" style="color: #009846;">Центр надання адміністративних послуг в Клеванській
+						селищній раді</h5>
+				</div>
+				<div class="col-sm-4 d-flex p-3">
+					<h5 class="footer-text"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+							fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+							<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+						</svg>Рівненська область, Рівненський район, смт Клевань, вул. Івана Франка, 20</h5>
+				</div>
+				<div class="col-sm-4 d-flex p-3">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+						class="bi bi-telephone-fill" viewBox="0 0 16 16">
+						<path fill-rule="evenodd"
+							d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+					</svg>
+					<h5 class="footer-text">cnap.klevan@gmail.com</h5>
+					<h5 class="footer-text">+38(097) 445-52-52</h5>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2e59c2" class="bi bi-facebook"
+						viewBox="0 0 16 16">
+						<path
+							d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="arrow-up"><a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#e5097f"
+				class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+				<path fill-rule="evenodd"
+					d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z" />
+				<path fill-rule="evenodd"
+					d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+			</svg></a></div>
+
+	<a href="#top">
+		<div class="dws">
+			<div class="pulse">
+				<div class="bloc"></div>
+				<div class="phone"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff"
+						class="bi bi-telephone-fill" viewBox="0 0 16 16">
+						<path fill-rule="evenodd"
+							d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+					</svg></div>
+				<div class="phone-text">Кнопка зв'язку</div>
+			</div>
+		</div>
+	</a>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
