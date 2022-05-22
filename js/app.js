@@ -15,6 +15,7 @@ function hideTab() {
 }
 function showTab() {
    tabPanels[value].classList.add('active', 'show')
+   scrollToElement()
 }
 
 for (let i = 0; i < links.length; i++) {
