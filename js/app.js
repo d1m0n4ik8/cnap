@@ -1,7 +1,6 @@
 let groupTab = document.getElementById('list-tab')
 let tabContent = document.getElementById('nav-tabContent')
 let links = document.querySelectorAll('.services-link')
-let listItems = document.querySelectorAll('.list-group-item')
 let tabPanels = document.querySelectorAll('.tab-pane')
 
 function scrollToElement() {
