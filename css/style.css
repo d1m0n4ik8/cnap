@@ -215,6 +215,7 @@ p {
    color: #444444;
    padding: 30px;
    text-align: center;
+   overflow: hidden;
 }
 .service-link h3 {
    padding: 5px;
@@ -544,6 +545,11 @@ p {
    text-indent: 30px;
    font-size: 18px;
 }
+.about__img {
+   width: 100%;
+   max-width: 500px;
+   height: auto;
+}
 
 /*footer*/
 .footer {
@@ -700,11 +706,6 @@ a.grey-links:hover {
    color: #e9222c;
 }
 
-/*About*/
-.about__img {
-   max-width: 600px;
-}
-
 /*Photo-galery*/
 a[data-fancybox] img {
    cursor: zoom-in;
@@ -742,6 +743,9 @@ a[data-fancybox] img {
    }
 }
 @media (max-width: 767px) {
+   .menu {
+      padding: 10px 0;
+   }
    .dropdown-menu {
       border-top: 1px solid #f50000;
       position: relative;
@@ -753,7 +757,7 @@ a[data-fancybox] img {
       font-size: 14px;
    }
    .navbar-brand img {
-      width: 60px;
+      width: 55px;
    }
    .dropdown-item {
       font-size: 20px;
